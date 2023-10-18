@@ -5,16 +5,17 @@ using Pathfinding;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private AIBase pathfinding;
+    [Header("Components")]
+    [SerializeField] private Rigidbody rb;
     [SerializeField] private PlayerInputHandling inputHandler;
     [SerializeField] private Transform movementRoot;
-    [SerializeField] private float lookAheadMultiplier = 1;
+    [SerializeField] private float jumpMultiplier;
+    [SerializeField] private float speedMultiplier;
 
     private Vector3 movementVector;
 
     private void Awake()
     {
-        if (pathfinding == null) pathfinding = GetComponent<AIBase>();
         if (inputHandler == null) inputHandler = FindObjectOfType<PlayerInputHandling>();
         if (movementRoot == null) movementRoot = GetComponent<Transform>();
     }
@@ -40,10 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void ReadJump(bool jump)
     {
-        if (jump)
-        {
-            movementRoot.position += Vector3.up * 15;
-        }
+        if (jump) { movementRoot.position += Vector3.up * jumpMultiplier; }
     }
 
     public void ReadMovement(Vector2 movement)
@@ -58,6 +56,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void MovePlayer()
     {
-        pathfinding.destination = movementRoot.position + movementVector * lookAheadMultiplier;
+        rb.AddForce(speedMultiplier * Time.fixedDeltaTime * movementVector);
     }
 }
