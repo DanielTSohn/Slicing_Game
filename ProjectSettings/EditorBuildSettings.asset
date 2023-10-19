@@ -5,64 +5,64 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/MDExample_Introduction.unity
     guid: 6004aa1f22cf54c43a6921809cdf9030
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Geometry/MDExample_Geometry.unity
     guid: 01fb078f8480a4f4ebbc7bd1f78e89be
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Geometry/MDExample_HexagonGrid.unity
     guid: 5d7742830a667d9408a7769f0d58c0ed
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Geometry/MDExample_HexagonGrid_Music.unity
     guid: 9a56fe06e6388d5458687e9ef6678847
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Geometry/MDExample_MeshPainting_2D.unity
     guid: 88b81d452c850514b8948f01d6a93b23
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Geometry/MDExample_MeshPainting_3D.unity
     guid: 57d19b2766ce22548a744b539c116450
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Geometry/MDExample_PathCreator.unity
     guid: 0a1c31cb9536e004e85c7503d1c82fb0
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Geometry/MDExample_TunnelCreator.unity
     guid: 896a224eaa2b8b24b8b90545f35957b0
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/MeshEditor/MDExample_AxisEditor.unity
     guid: c37479de992566249bda3e54896decd4
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/MeshEditor/MDExample_DefaultMeshEditor.unity
     guid: 9def32d9126eb5444ad597bd47ab32ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/MeshEditor/MDExample_VertexAnimation.unity
     guid: 15ca7a62240793c4fadad313c219704b
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_FFD.unity
     guid: 93ee52af59c37d04a96001b7d74c1875
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_InteractiveSurface.unity
     guid: b480df4d32675d54f9bfc5b613ac8dd5
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_MeltController.unity
     guid: 74b546e2e3c6fea4ba67158c75b847a1
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_MeshCut.unity
     guid: b4e85b9f86cb1204db57c0039b1d741d
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_MeshDamage.unity
     guid: 658d79537ab3e9e4880eb69520e59b62
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_MeshEffector.unity
     guid: d5c9ad4bd191b0e4b86862edeefb3a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_MeshFit.unity
     guid: 4f62f699deb7d2d419b8acf607076487
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_MeshMorpher.unity
     guid: 7b26011eac0abbd4caae6108e5ff5443
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_MeshSlime.unity
     guid: de4e072c95d2dcb46a88d8ab38f89bd1
   - enabled: 1
@@ -71,31 +71,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_SculptingSimple.unity
     guid: 4e97f841c675c524190ca741e1ca64e6
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_SculptingTerrain.unity
     guid: 3aab228139b422f4dbb58457b2f821b2
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_SimpleModifiers.unity
     guid: 0f6e5ef6b7c538f4c9e8daf82ca9b119
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Modifiers/MDExample_SurfaceTracking.unity
     guid: 0844495ef0db338469dafa9128995122
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Mobile/MDExample_MobileMeshEditor.unity
     guid: 44b99601781e6a346b5333929b87578a
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Mobile/MDExample_MobileMeshPainting.unity
     guid: d677297ec56bd904580a32e745049105
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Mobile/MDExample_MobileSculptingComplex.unity
     guid: 9521046711fcf694daf4771b73de5f9d
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Mobile/MDExample_MobileSculptingSimple.unity
     guid: 186b4a083fbf8424295126b423c19984
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Mobile/MDExample_MobileSurfaceTracking.unity
     guid: b35710d9959200d49843ebb32d01e307
-  - enabled: 1
+  - enabled: 0
     path: Assets/MD_FullPackage/MD_Examples/MD_Examples_Scenes/Shaders/MDExample_Shaders.unity
     guid: a50223f1fc7225a4890d9379cb02afcf
   m_configObjects:

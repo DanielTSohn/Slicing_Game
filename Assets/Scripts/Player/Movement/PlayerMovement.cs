@@ -9,10 +9,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private PlayerInputHandling inputHandler;
     [SerializeField] private Transform movementRoot;
+    [SerializeField] private Transform movementCamera;
     [SerializeField] private float jumpMultiplier;
     [SerializeField] private float speedMultiplier;
 
     private Vector3 movementVector;
+    private Vector3 movementForward;
+    private Vector3 movementRight;
 
     private void Awake()
     {
@@ -41,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void ReadJump(bool jump)
     {
-        if (jump) { movementRoot.position += Vector3.up * jumpMultiplier; }
+        if (jump) { rb.AddRelativeForce(Vector3.up * jumpMultiplier, ForceMode.Impulse); }
     }
 
     public void ReadMovement(Vector2 movement)
@@ -56,6 +59,19 @@ public class PlayerMovement : MonoBehaviour
 
     public void MovePlayer()
     {
-        rb.AddForce(speedMultiplier * Time.fixedDeltaTime * movementVector);
+        movementForward = Vector3.ProjectOnPlane(movementCamera.position - transform.position, transform.up).normalized;
+        movementRight = Vector3.Cross(movementForward, transform.up).normalized;
+        rb.AddForce(speedMultiplier * Time.fixedDeltaTime * (-movementForward * movementVector.z + movementRight * movementVector.x).normalized, ForceMode.Impulse);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, -movementForward);
+        Gizmos.DrawRay(transform.position, movementRight);
+        Gizmos.color = Color.green;
+        Gizmos.DrawRay(transform.position, movementVector);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawRay(transform.position, (-movementForward * movementVector.z + movementRight * movementVector.x));
     }
 }
