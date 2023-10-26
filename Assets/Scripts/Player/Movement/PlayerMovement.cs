@@ -12,10 +12,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform movementCamera;
     [SerializeField] private float jumpMultiplier;
     [SerializeField] private float speedMultiplier;
+    [SerializeField] private float slowdownMultiplier;
     [SerializeField] private float sprintMultiplier;
 
-    public bool CanMove {  get; private set; }
-    public bool Sprinting {  get; private set; }
+    public bool CanMove { get; private set; } = true;
+    public bool Sprinting { get; private set; } = false;
 
     private Vector3 movementVector;
     private Vector3 movementForward;
@@ -68,9 +69,8 @@ public class PlayerMovement : MonoBehaviour
             movementForward = Vector3.ProjectOnPlane(movementCamera.position - transform.position, transform.up).normalized;
             movementRight = Vector3.Cross(movementForward, transform.up).normalized;
             Vector3 velocity = rb.velocity;
-            float slowdownMultiplier = 1 + Mathf.Clamp(speedMultiplier / 1000, 0, speedMultiplier);
             velocity.x /= slowdownMultiplier;
-            velocity.y /= slowdownMultiplier;
+            velocity.z /= slowdownMultiplier;
             rb.velocity = velocity;
             rb.AddForce(speedMultiplier * Time.fixedDeltaTime * (-movementForward * movementVector.z + movementRight * movementVector.x).normalized, ForceMode.Impulse);
         }
